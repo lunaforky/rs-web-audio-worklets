@@ -5,7 +5,6 @@
 
 
 /// Audio buffer structs
-
 pub mod buffer;
 /// Audio node bindings (main thread)
 pub mod node;
@@ -32,7 +31,6 @@ pub use web_sys;
 
 #[doc(hidden)]
 pub use waw_macros as derive;
-
 /// Generates the JS bindings
 ///
 /// Given a struct implementing `AudioModule`, the [`main!`] will enable wasm-bindgen to
@@ -45,6 +43,8 @@ pub use waw_macros as derive;
 ///   buffer::{ AudioBuffer, ParamBuffer }
 /// };
 ///
+
+
 /// struct MyWorklet;
 ///
 /// impl AudioModule for MyWorklet {
@@ -56,4 +56,5 @@ pub use waw_macros as derive;
 /// }
 /// waw::main!(MyWorklet);
 /// ```
+
 pub use waw_macros::main;
