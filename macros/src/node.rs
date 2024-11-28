@@ -31,6 +31,7 @@ pub fn node_wrapper(ident: &Ident) -> proc_macro2::TokenStream {
             }
 
             // Get the AudioParam for a specific parameter of the module.
+            // Get the Auio Parameter for a specific parameter of the modules and have to add the correct part for statting code refactoring
             pub fn get_param(&self, param: <#ident as waw::worklet::AudioModule>::Param) -> waw::web_sys::AudioParam {
                 self.0.get_param(param)
             }
