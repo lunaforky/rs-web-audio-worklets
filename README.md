@@ -20,6 +20,8 @@ Then, in your Rust code, simply implement the `AudioModule` trait and call the `
 
 `src/lib.rs`
 
+this is the test change for testing the code quality
+
 ```rust
 use waw::{
   worklet::{ AudioModule, Emitter },
