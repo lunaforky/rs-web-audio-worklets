@@ -43,6 +43,8 @@ waw::main!(MyWorklet);
 
 Run the build using the xtask command
 
+This is the another test change for testing code quality
+
 ```bash
 cargo xtask dist
 ```
